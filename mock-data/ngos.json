@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "organizationName": "Education for All",
+    "description": "Providing quality education to underprivileged children",
+    "causes": [
+      "Education"
+    ],
+    "location": "New York, NY",
+    "website": "https://educationforall.org",
+    "isVerified": true
+  }
+]

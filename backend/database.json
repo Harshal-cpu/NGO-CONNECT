@@ -1,0 +1,577 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@test.com",
+      "password": "admin123",
+      "role": "Admin",
+      "phone": "1234567890"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@test.com",
+      "password": "test123",
+      "role": "Donor",
+      "phone": "1234567891"
+    },
+    {
+      "id": 1758977180974,
+      "name": "Harshal keda pawar",
+      "email": "pawarharshal839@gmail.com",
+      "password": "12345678",
+      "role": "Donor",
+      "phone": "09322428740",
+      "organization": null,
+      "createdAt": "2025-09-27T12:46:20.974Z"
+    },
+    {
+      "id": 1758977366897,
+      "name": "Priya Mehta",
+      "email": "priya.mehta@greams.org",
+      "password": "Priya@123",
+      "role": "NGO",
+      "phone": "+91-9812345678",
+      "organization": "Green Dreams Initiative",
+      "createdAt": "2025-09-27T12:49:26.897Z"
+    },
+    {
+      "id": 1758977767706,
+      "name": "Priya Mehta",
+      "email": "priya.mehta@green.org",
+      "password": "Priya@123",
+      "role": "NGO",
+      "phone": "+91-9812345678",
+      "organization": "Green Dreams Initiative",
+      "createdAt": "2025-09-27T12:56:07.706Z"
+    },
+    {
+      "id": 1758978398959,
+      "name": "Priya Mehta",
+      "email": "priya.mehta@helpinghands.org",
+      "password": "Priya@123",
+      "role": "NGO",
+      "phone": "+91-9812345678",
+      "organization": "Helping Hands Foundation",
+      "createdAt": "2025-09-27T13:06:38.959Z"
+    },
+    {
+      "id": 1758979190728,
+      "name": "Rahul sharma",
+      "email": "rahul@gmail.com",
+      "password": "demo@123",
+      "role": "Admin",
+      "phone": "1234567890",
+      "organization": null,
+      "createdAt": "2025-09-27T13:19:50.728Z"
+    },
+    {
+      "id": 1759042137151,
+      "name": "Aarav Mehta",
+      "email": "aarav.mehta@futuremail.com",
+      "password": "Innovate@2025",
+      "role": "NGO",
+      "phone": "+91-9812345678",
+      "organization": "NextGen Impact Foundation",
+      "createdAt": "2025-09-28T06:48:57.151Z"
+    },
+    {
+      "id": 1759062400525,
+      "name": "Kalyani pawar",
+      "email": "kalyanipawar1234@gmail.com",
+      "password": "123456",
+      "role": "Donor",
+      "phone": "1234567891",
+      "organization": null,
+      "createdAt": "2025-09-28T12:26:40.525Z"
+    },
+    {
+      "id": 1759066086567,
+      "name": "Arjun Khanna",
+      "email": "arjun.khanna@brightfuture.org",
+      "password": "Arjun@5678",
+      "role": "NGO",
+      "phone": "+91-9988776655",
+      "organization": "Bright Future Foundation",
+      "createdAt": "2025-09-28T13:28:06.567Z"
+    },
+    {
+      "id": 1759507445185,
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@demo.org",
+      "password": "Demo@1234",
+      "role": "NGO",
+      "phone": "+91 9876543210",
+      "organization": "Hunger Relief Foundation",
+      "createdAt": "2025-10-03T16:04:05.185Z"
+    }
+  ],
+  "ngos": [
+    {
+      "id": 1,
+      "name": "Save Children",
+      "email": "contact@savechildren.org",
+      "cause": "Healthcare",
+      "verified": true,
+      "totalReceived": 1250,
+      "contact": {
+        "phone": "8574962187",
+        "email": "helthcare@gmail.com",
+        "address": "Nashik,Maharashtra,India"
+      },
+      "description": "Save Children is a non-profit organization dedicated to protecting and improving the lives of vulnerable children. Our mission is to ensure that every child has access to education, healthcare, nutrition, and a safe environment to grow and thrive. We run programs focused on child welfare, emergency relief, and advocacy for children’s rights, working closely with communities, schools, and local authorities to create a brighter and healthier future for every child.",
+      "updatedAt": "2025-09-27T13:18:33.255Z"
+    },
+    {
+      "id": 1758977767708,
+      "name": "Green Dreams Initiative",
+      "email": "priya.mehta@green.org",
+      "cause": "G",
+      "verified": true,
+      "totalReceived": 0,
+      "userId": 1758977767706,
+      "createdAt": "2025-09-27T12:56:07.707Z",
+      "verifiedAt": "2025-09-27T13:20:27.206Z",
+      "contact": {
+        "phone": "+91-9876543210",
+        "email": "priya.mehta@green.org",
+        "address": "201, Sunrise Residency, Baner Road, Pune, Maharashtra – 411045"
+      },
+      "description": "Green Dreams Initiative works to empower underprivileged children through quality education and skill development. We run after-school programs, digital literacy workshops, and scholarship initiatives to give every child the opportunity to learn, grow, and build a sustainable future.",
+      "updatedAt": "2025-09-28T16:14:01.495Z"
+    },
+    {
+      "id": 1758978006970,
+      "name": "Green Initiative",
+      "cause": "Environment",
+      "contact": {
+        "phone": "+1-555-0123",
+        "email": "contact@greendreams.org",
+        "address": "12, Green Park Road, Pune, Maharashtra, India – 411001"
+      },
+      "description": "Green Dreams Initiative is a non-profit organization focused on environmental sustainability and conservation. Our mission is to create greener communities by organizing tree plantation drives, promoting waste management awareness, and encouraging renewable energy solutions. Since 2012, we have partnered with schools, local governments, and volunteers to reduce carbon footprints and build eco-friendly habits. Together, we aim to inspire a healthier planet for future generations.",
+      "verified": true,
+      "totalReceived": 0,
+      "userId": null,
+      "createdAt": "2025-09-27T13:00:06.970Z",
+      "updatedAt": "2025-09-27T13:15:40.709Z",
+      "verifiedAt": "2025-09-27T13:20:28.356Z"
+    },
+    {
+      "id": 1758978398960,
+      "name": "Helping Hands Foundation",
+      "email": "priya.mehta@helpinghands.org",
+      "cause": "G",
+      "verified": true,
+      "totalReceived": 0,
+      "userId": 1758978398959,
+      "createdAt": "2025-09-27T13:06:38.959Z",
+      "verifiedAt": "2025-09-27T13:20:29.564Z",
+      "contact": {
+        "phone": "+91-9812345678",
+        "email": "priya.mehta@helpinghands.org",
+        "address": "12-B, Lotus Residency, Koregaon Park, Pune, Maharashtra – 411001"
+      },
+      "description": "Helping Hands Foundation is a non-profit organization dedicated to improving access to education for children from marginalized communities. We provide school supplies, tutoring support, digital learning opportunities, and mentorship programs to ensure every child receives equal opportunities to learn and grow.",
+      "updatedAt": "2025-09-28T16:10:52.581Z"
+    },
+    {
+      "id": 1759042137152,
+      "name": "NextGen Impact Foundation",
+      "email": "aarav.mehta@futuremail.com",
+      "cause": "G",
+      "verified": true,
+      "totalReceived": 0,
+      "userId": 1759042137151,
+      "createdAt": "2025-09-28T06:48:57.151Z",
+      "verifiedAt": "2025-09-28T06:55:46.643Z",
+      "contact": {
+        "phone": "+91-9823456710",
+        "email": "aarav.mehta@futuremail.com",
+        "address": "302, Harmony Plaza, Andheri West, Mumbai, Maharashtra – 400053"
+      },
+      "description": "NextGen Impact Foundation is committed to transforming the lives of children and youth through education and skill development. Our initiatives focus on bridging the digital divide, providing access to quality learning resources, and empowering students from underserved communities to build brighter futures.",
+      "updatedAt": "2025-09-28T16:07:28.363Z"
+    },
+    {
+      "id": 1759066086568,
+      "name": "Bright Future Foundation",
+      "email": "arjun.khanna@brightfuture.org",
+      "cause": "G",
+      "verified": false,
+      "totalReceived": 0,
+      "userId": 1759066086567,
+      "createdAt": "2025-09-28T13:28:06.567Z",
+      "contact": {
+        "phone": "+91-22-2444 0888",
+        "email": "info@brightfutureindia.org",
+        "address": "Bright Future Foundation, 3rd Floor, Gokul Arcade, Sahar Road, Vile Parle (East), Mumbai – 400057, Maharashtra, India"
+      },
+      "updatedAt": "2025-09-28T14:17:52.969Z",
+      "description": "Bright Future Foundation is a youth-focused NGO that empowers underprivileged children and young adults with the skills, knowledge, and confidence to pursue meaningful careers. Through education programs, career counseling, and employability training, Bright Future bridges the gap between education and employment. The organization works closely with schools, communities, and corporate partners to ensure every young person has the opportunity to dream big and achieve a brighter future."
+    },
+    {
+      "id": 1759507445186,
+      "name": "Hunger Relief Foundation",
+      "email": "aarav.sharma@demo.org",
+      "cause": "G",
+      "verified": false,
+      "totalReceived": 0,
+      "userId": 1759507445185,
+      "createdAt": "2025-10-03T16:04:05.185Z",
+      "contact": {
+        "phone": "+91 9123456789",
+        "email": "mailto:neha.verma@hungerhelp.org",
+        "address": "12, Community Center, MG Road, Nashik, Maharashtra, India"
+      },
+      "description": "Hunger Relief Foundation works to eliminate hunger by providing daily meals, organizing food donation drives, and supporting underprivileged communities with sustainable nutrition programs.",
+      "updatedAt": "2025-10-03T16:07:40.979Z"
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "donorId": 1,
+      "ngoId": 1,
+      "amount": 500,
+      "date": "2024-01-15",
+      "status": "completed",
+      "donorName": "John Doe",
+      "donorEmail": "john@test.com",
+      "ngoName": "Save Children"
+    },
+    {
+      "id": 2,
+      "donorId": 1758977180974,
+      "ngoId": 1,
+      "amount": 1000,
+      "date": "2025-09-27",
+      "status": "completed",
+      "donorName": "Harshal keda pawar",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "ngoName": "Save Children",
+      "message": "Keep up the great work!",
+      "createdAt": "2025-09-27T16:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "donorId": 1758977180974,
+      "ngoId": 1758978006970,
+      "amount": 750,
+      "date": "2025-09-27",
+      "status": "completed",
+      "donorName": "Harshal keda pawar",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "ngoName": "Green Initiative",
+      "message": "Supporting environmental causes",
+      "createdAt": "2025-09-27T16:35:00.000Z"
+    },
+    {
+      "id": 1758995371353,
+      "donorId": 1758977180974,
+      "ngoId": 1,
+      "amount": 100,
+      "date": "2025-09-27",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "test",
+      "createdAt": "2025-09-27T17:49:31.353Z"
+    },
+    {
+      "id": 1758995478373,
+      "donorId": 1758977180974,
+      "ngoId": 1,
+      "amount": 500,
+      "date": "2025-09-27",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "",
+      "createdAt": "2025-09-27T17:51:18.373Z"
+    },
+    {
+      "id": 1758995598879,
+      "donorId": 1758977180974,
+      "ngoId": 1758989260652,
+      "amount": 500,
+      "date": "2025-09-27",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-27T17:53:18.886Z"
+    },
+    {
+      "id": 1759035445201,
+      "donorId": 1758977180974,
+      "ngoId": 1758902955634,
+      "amount": 1,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T04:57:25.201Z"
+    },
+    {
+      "id": 1759035507708,
+      "donorId": 1758977180974,
+      "ngoId": 1,
+      "amount": 551,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T04:58:27.708Z"
+    },
+    {
+      "id": 1759042356864,
+      "donorId": 1759042137151,
+      "ngoId": 1759042244898,
+      "amount": 100,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "aarav.mehta@futuremail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T06:52:36.864Z"
+    },
+    {
+      "id": 1759058372412,
+      "donorId": 1758979190728,
+      "ngoId": 1758977767708,
+      "amount": 500,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "rahul@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T11:19:32.412Z"
+    },
+    {
+      "id": 1759059074117,
+      "donorId": 1758979190728,
+      "ngoId": 1759042137152,
+      "amount": 1,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "rahul@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T11:31:14.117Z"
+    },
+    {
+      "id": 1759060426501,
+      "donorId": 1758977180974,
+      "ngoId": 1758978398960,
+      "amount": 5000,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T11:53:46.501Z"
+    },
+    {
+      "id": 1759062612573,
+      "donorId": 1759062400525,
+      "ngoId": 1759042137152,
+      "amount": 5000,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "kalyanipawar1234@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T12:30:12.573Z"
+    },
+    {
+      "id": 1759067402752,
+      "donorId": 1759066086567,
+      "ngoId": 1758902955634,
+      "amount": 500,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "arjun.khanna@brightfuture.org",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T13:50:02.752Z"
+    },
+    {
+      "id": 1759067931903,
+      "donorId": 1759066086567,
+      "ngoId": 1759066215307,
+      "amount": 500,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "arjun.khanna@brightfuture.org",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T13:58:51.904Z"
+    },
+    {
+      "id": 1759068254853,
+      "donorId": 1759066086567,
+      "ngoId": 1759066086568,
+      "amount": 2500,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "arjun.khanna@brightfuture.org",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T14:04:14.854Z"
+    },
+    {
+      "id": 1759075197476,
+      "donorId": 1759062400525,
+      "ngoId": 1758977767708,
+      "amount": 551,
+      "date": "2025-09-28",
+      "status": "completed",
+      "donorEmail": "kalyanipawar1234@gmail.com",
+      "message": "Payment via upi",
+      "createdAt": "2025-09-28T15:59:57.476Z"
+    },
+    {
+      "id": 1759222965579,
+      "donorId": 1759062400525,
+      "ngoId": 1758978006970,
+      "amount": 500,
+      "date": "2025-09-30",
+      "status": "completed",
+      "donorEmail": "kalyanipawar1234@gmail.com",
+      "message": "Payment via qr",
+      "createdAt": "2025-09-30T09:02:45.579Z"
+    },
+    {
+      "id": 1759379821063,
+      "donorId": 1,
+      "ngoId": 1758978398960,
+      "amount": 40,
+      "date": "2025-10-02",
+      "status": "completed",
+      "donorEmail": "admin@test.com",
+      "message": "Payment via qr",
+      "createdAt": "2025-10-02T04:37:01.063Z"
+    },
+    {
+      "id": 1759509352662,
+      "donorId": 1758977180974,
+      "ngoId": 1759066086568,
+      "amount": 500,
+      "date": "2025-10-03",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Donation to Bright Future Foundation",
+      "anonymous": false,
+      "razorpayOrderId": "order_RP4JgvElnBozUQ",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-03T16:35:52.663Z",
+      "razorpayPaymentId": "pay_RP4KFLtmllei23",
+      "razorpaySignature": "9417c2107fc320d5e1289f3db3715d95960c8672154fd5579c461f56f9837814",
+      "completedAt": "2025-10-03T16:37:03.423Z"
+    },
+    {
+      "id": 1759510815558,
+      "donorId": 1759507445185,
+      "ngoId": 1759507445186,
+      "amount": 500,
+      "date": "2025-10-03",
+      "status": "completed",
+      "donorEmail": "aarav.sharma@demo.org",
+      "message": "Donation to Hunger Relief Foundation",
+      "anonymous": false,
+      "razorpayOrderId": "order_RP4jRkT40z1863",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-03T17:00:15.558Z",
+      "razorpayPaymentId": "pay_RP4jyv2aZFA606",
+      "razorpaySignature": "889e400025b955697fd18d00e906c1709fb4aff630272f9a7e6d9af9f8dd41bb",
+      "completedAt": "2025-10-03T17:01:00.533Z"
+    },
+    {
+      "id": 1759590575870,
+      "donorId": 1759062400525,
+      "ngoId": 1758977767708,
+      "amount": 500,
+      "date": "2025-10-04",
+      "status": "completed",
+      "donorEmail": "kalyanipawar1234@gmail.com",
+      "message": "Donation to Green Dreams Initiative",
+      "anonymous": false,
+      "razorpayOrderId": "order_RPRNgEsIIi9CQb",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-04T15:09:35.870Z",
+      "razorpayPaymentId": "pay_RPRP1tJZUt9PaW",
+      "razorpaySignature": "66771f1f4136a9d2c22dcfe9425ae3c0cd866595557163ad4f07961282c72367",
+      "completedAt": "2025-10-04T15:11:28.828Z"
+    },
+    {
+      "id": 1759678111306,
+      "donorId": 1758977180974,
+      "ngoId": 1759507445186,
+      "amount": 600,
+      "date": "2025-10-05",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Donation to Hunger Relief Foundation",
+      "anonymous": false,
+      "razorpayOrderId": "order_RPqEnHWGsAtdSY",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-05T15:28:31.307Z",
+      "razorpayPaymentId": "pay_RPqEyQGh2N7WsF",
+      "razorpaySignature": "9e44c71f09c1806049bd9bbfb7d09f3659c4a3cf67c0374bcabe11dbca0d8529",
+      "completedAt": "2025-10-05T15:29:04.499Z"
+    },
+    {
+      "id": 1759678321192,
+      "donorId": 1758977180974,
+      "ngoId": 1759507445186,
+      "amount": 500,
+      "date": "2025-10-05",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Donation to Hunger Relief Foundation",
+      "anonymous": false,
+      "razorpayOrderId": "order_RPqIUTZcr2zlaT",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-05T15:32:01.192Z",
+      "razorpayPaymentId": "pay_RPqJ6OQU2XqLA9",
+      "razorpaySignature": "d9151e628281eec982d10f5ed5a92cf3e62506ac8ff9eb7c8c72586701167f5b",
+      "completedAt": "2025-10-05T15:32:50.081Z"
+    },
+    {
+      "id": 1759682344670,
+      "donorId": 1758977180974,
+      "ngoId": 1758977767708,
+      "amount": 1,
+      "date": "2025-10-05",
+      "status": "pending",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Donation to Green Dreams Initiative",
+      "anonymous": false,
+      "razorpayOrderId": "order_RPrRK7BTAHD0az",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-05T16:39:04.670Z"
+    },
+    {
+      "id": 1759770200166,
+      "donorId": 1758977180974,
+      "ngoId": 1,
+      "amount": 500,
+      "date": "2025-10-06",
+      "status": "completed",
+      "donorEmail": "pawarharshal839@gmail.com",
+      "message": "Donation to Save Children",
+      "anonymous": false,
+      "razorpayOrderId": "order_RQGO4uHqstBAUE",
+      "paymentGateway": "razorpay",
+      "createdAt": "2025-10-06T17:03:20.166Z",
+      "razorpayPaymentId": "pay_RQGOEPHlldPTJr",
+      "razorpaySignature": "f836ecc2f06d5c6bdf6812a4d13f8a902d1a9f60bd6738d1adb59a7dc2c680d2",
+      "completedAt": "2025-10-06T17:03:41.258Z"
+    }
+  ],
+  "donationRequests": [
+    {
+      "id": 1759509816520,
+      "ngoId": 1759507445186,
+      "title": "Nutritious Meal Kits for Children",
+      "description": "We are requesting support to provide meal kits containing rice, pulses, and essential nutrients for underprivileged children in Nashik. Many children go to school without proper meals, and this initiative will help improve their health and education outcomes.",
+      "targetAmount": null,
+      "category": "Food",
+      "urgency": "High",
+      "status": "active",
+      "createdAt": "2025-10-03T16:43:36.520Z",
+      "pledges": []
+    }
+  ]
+}

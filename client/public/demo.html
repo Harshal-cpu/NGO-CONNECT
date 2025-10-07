@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Connect - Enhanced HomePage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(147, 51, 234, 0.6), rgba(79, 70, 229, 0.7));
+            z-index: -1;
+        }
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        .hero-subtitle {
+            color: #fde047;
+            display: block;
+            margin-top: 0.5rem;
+        }
+        .hero-description {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            color: rgba(219, 234, 254, 0.9);
+            line-height: 1.6;
+        }
+        .button-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #2563eb, #4f46e5);
+            color: white;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.4);
+        }
+        .btn-translucent {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        .btn-translucent:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .floating-circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            backdrop-filter: blur(4px);
+        }
+        .circle-1 {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation: float 4s ease-in-out infinite;
+        }
+        .circle-2 {
+            width: 64px;
+            height: 64px;
+            top: 40%;
+            right: 20%;
+            animation: float 3s ease-in-out infinite reverse;
+        }
+        .circle-3 {
+            width: 48px;
+            height: 48px;
+            bottom: 20%;
+            left: 25%;
+            animation: float 5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            color: white;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" 
+             alt="People helping community" 
+             class="hero-bg">
+        <div class="hero-overlay"></div>
+        
+        <div class="floating-elements">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="trust-badge">
+                <div class="pulse-dot"></div>
+                Trusted by 500+ NGOs worldwide
+            </div>
+            
+            <h1 class="hero-title">
+                Connect Hearts with 
+                <span class="hero-subtitle">Meaningful Causes</span>
+            </h1>
+            
+            <p class="hero-description">
+                Empowering change through transparent donations. Join thousands of donors 
+                supporting verified NGOs making real impact in communities worldwide.
+            </p>
+            
+            <div class="button-group">
+                <a href="#" class="btn btn-primary">
+                    Start Your Impact Journey
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+                
+                <a href="#" class="btn btn-translucent">
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

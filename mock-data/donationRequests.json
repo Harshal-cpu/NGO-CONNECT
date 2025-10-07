@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "ngoId": "1",
+    "title": "School Books and Supplies",
+    "description": "We need educational materials for 200 students in our program.",
+    "category": "Education",
+    "quantity": 200,
+    "urgency": "Medium",
+    "location": "New York, NY",
+    "deadline": "2024-12-31",
+    "status": "Active",
+    "pledges": []
+  }
+]

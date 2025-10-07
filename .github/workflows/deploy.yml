@@ -1,0 +1,43 @@
+name: Deploy CONNECT NGO
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: client/package-lock.json
+    
+    - name: Install dependencies
+      run: cd client && npm ci
+    
+    - name: Build React app
+      run: cd client && npm run build
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./client/build
+
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to Railway
+      uses: railwayapp/railway-deploy@v1
+      with:
+        railway_token: ${{ secrets.RAILWAY_TOKEN }}
+        service: 'connect-ngo-backend'

@@ -1,0 +1,16 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+
+/static/js/*.js
+  Content-Type: application/javascript
+
+/static/css/*.css
+  Content-Type: text/css
+
+/*.js
+  Content-Type: application/javascript
+
+/*.mjs
+  Content-Type: application/javascript

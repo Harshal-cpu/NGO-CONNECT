@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "email": "ngo@test.com",
+    "role": "NGO",
+    "phone": "+1234567890",
+    "organization": "Education for All"
+  },
+  {
+    "id": "2",
+    "name": "Jane Smith",
+    "email": "donor@test.com",
+    "role": "Donor",
+    "phone": "+1234567891"
+  }
+]

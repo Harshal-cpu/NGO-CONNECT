@@ -1,0 +1,27 @@
+{
+  "name": "ngo-donation-platform",
+  "version": "1.0.0",
+  "description": "NGO Donation Platform with MERN Stack",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run server",
+    "frontend": "cd client && npm start",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd client && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "setup-db": "node setup-database.js",
+    "setup-mock-db": "node create-mock-db.js",
+    "build": "cd client && npm run build",
+    "vercel-build": "cd client && npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
+  }
+}
