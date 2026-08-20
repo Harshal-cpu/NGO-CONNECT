@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { LoginData, RegisterData } from '../types/auth';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://ngo-connect-backend-ct0p.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,

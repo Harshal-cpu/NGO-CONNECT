@@ -43,7 +43,7 @@ const DonationHistory: React.FC = () => {
         return;
       }
 
-      const response = await axios.get('http://localhost:5000/api/payments/my-donations', {
+      const response = await axios.get('https://ngo-connect-backend-ct0p.onrender.com/api/payments/my-donations', {
         headers: { Authorization: `Bearer ${token}` }
       });
       

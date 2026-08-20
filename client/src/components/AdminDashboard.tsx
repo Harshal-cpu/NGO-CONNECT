@@ -45,9 +45,9 @@ const AdminDashboard: React.FC = () => {
   const fetchData = async () => {
     try {
       const [donationsRes, ngosRes, statsRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/admin/donations'),
-        axios.get('http://localhost:5000/api/admin/ngos'),
-        axios.get('http://localhost:5000/api/admin/stats')
+        axios.get('https://ngo-connect-backend-ct0p.onrender.com/api/admin/donations'),
+        axios.get('https://ngo-connect-backend-ct0p.onrender.com/api/admin/ngos'),
+        axios.get('https://ngo-connect-backend-ct0p.onrender.com/api/admin/stats')
       ]);
       
       setDonations(donationsRes.data.donations);
@@ -60,7 +60,7 @@ const AdminDashboard: React.FC = () => {
 
   const verifyNGO = async (id: string) => {
     try {
-      await axios.put(`http://localhost:5000/api/admin/ngos/₹{id}/verify`);
+      await axios.put(`https://ngo-connect-backend-ct0p.onrender.com/api/admin/ngos/₹{id}/verify`);
       fetchData(); // Refresh data
     } catch (error) {
       console.error('Error verifying NGO:', error);
@@ -70,7 +70,7 @@ const AdminDashboard: React.FC = () => {
   const deleteNGO = async (id: string, name: string) => {
     if (window.confirm(`Are you sure you want to delete "₹{name}"? This action cannot be undone.`)) {
       try {
-        await axios.delete(`http://localhost:5000/api/admin/ngos/₹{id}`);
+        await axios.delete(`https://ngo-connect-backend-ct0p.onrender.com/api/admin/ngos/₹{id}`);
         fetchData(); // Refresh data
       } catch (error) {
         console.error('Error deleting NGO:', error);

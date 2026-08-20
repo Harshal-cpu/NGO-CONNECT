@@ -53,7 +53,7 @@ export const ngoService = {
     
     try {
       // Try to fetch from backend API first
-      const response = await axios.get('http://localhost:5000/api/browse/ngos');
+      const response = await axios.get('https://ngo-connect-backend-ct0p.onrender.com/api/browse/ngos');
       console.log('API Response:', response.data);
       
       // Backend returns direct array

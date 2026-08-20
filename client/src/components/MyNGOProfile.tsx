@@ -103,7 +103,7 @@ const MyNGOProfile: React.FC = () => {
 
       console.log('Sending update data:', updateData);
       
-      const response = await axios.put(`http://localhost:5000/api/ngo/${ngo.id || ngo._id}/edit`, updateData);
+      const response = await axios.put(`https://ngo-connect-backend-ct0p.onrender.com/api/ngo/${ngo.id || ngo._id}/edit`, updateData);
       
       console.log('Response:', response.data);
       
